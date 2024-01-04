@@ -60,9 +60,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local config_path = vim.fn.stdpath("config") .. "/"
 
-dofile("plugins.lua")
-dofile("keymaps.lua")
+dofile(config_path .. "plugins.lua")
+dofile(config_path .. "keymaps.lua")
 
 
 -- [[ Highlight on yank ]]
@@ -77,8 +78,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 
-dofile("telescope.lua")
-dofile("treesitter.lua")
+dofile(config_path .. "telescope.lua")
+dofile(config_path .. "treesitter.lua")
 
 
 -- [[ Configure LSP ]]
