@@ -44,7 +44,7 @@ require("neo-tree").setup({
 
 vim.keymap.set(
     'n',
-    '<leader>n',
+    '<leader>nf',
     function()
         require("neo-tree.command").execute({
             toggle = true,
@@ -52,5 +52,45 @@ vim.keymap.set(
             position = "left",
         })
     end,
-    { desc = 'Open Neotree' }
+    { desc = 'Toggle [N]eotree with [f]ilesystem view' }
 )
+
+vim.keymap.set(
+    'n',
+    '<leader>nb',
+    function()
+        require("neo-tree.command").execute({
+            toggle = true,
+            source = "buffers",
+            position = "left",
+        })
+    end,
+    { desc = 'Toggle [N]eotree with [b]uffers view' }
+)
+
+vim.keymap.set(
+    'n',
+    '<leader>ng',
+    function()
+        require("neo-tree.command").execute({
+            toggle = true,
+            source = "git_status",
+            position = "left",
+        })
+    end,
+    { desc = 'Toggle [N]eotree with [g]it view' }
+)
+
+vim.keymap.set(
+    'n',
+    '<leader>nd',
+    function()
+        require("neo-tree.command").execute({
+            toggle = true,
+            source = "diagnostics",
+            position = "bottom",
+        })
+    end,
+    { desc = 'Toggle [N]eotree with [d]iagnostics view' }
+)
+
