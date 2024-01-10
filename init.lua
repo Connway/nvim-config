@@ -80,7 +80,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 dofile(config_path .. "telescope.lua")
 dofile(config_path .. "treesitter.lua")
-
+dofile(config_path .. "neotree.lua")
 
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
