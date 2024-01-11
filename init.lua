@@ -1,4 +1,4 @@
---[[
+		--[[
 
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
@@ -45,6 +45,8 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.opt.guifont="FiraMono Nerd Font:h12"
+vim.opt.listchars="eol:↴,space:·,tab:┃┈┈,trail:·,nbsp:·,"
+vim.opt.list = true
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
@@ -79,10 +81,17 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+vim.api.nvim_set_hl(0, "Whitespace", { fg = "#444444" })
+vim.api.nvim_set_hl(0, "NonText", { fg = "#444444" })
+--vim.api.nvim_set_hl(0, "Whitespace", { fg = "#FF0000" })
 
 dofile(config_path .. "telescope.lua")
 dofile(config_path .. "treesitter.lua")
 dofile(config_path .. "neotree.lua")
+dofile(config_path .. "ibl.lua")
+
+require("virt-column").setup({ virtcolumn = "120" })
+require('Comment').setup()
 
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
@@ -256,4 +265,4 @@ cmp.setup {
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+-- vim: ts=4 sts=4 sw=4 noet
