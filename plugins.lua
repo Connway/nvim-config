@@ -211,7 +211,7 @@ require('lazy').setup({
 
   { "lukas-reineke/virt-column.nvim", opts = {} },
 
-  { 'numToStr/Comment.nvim', opts = {} },
+  { "hiphish/rainbow-delimiters.nvim"},
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
