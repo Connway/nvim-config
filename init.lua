@@ -44,9 +44,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-if vim.g.nvy then
-  vim.opt.guifont="FiraMono Nerd Font:h12"
-end
+vim.opt.guifont="FiraMono Nerd Font:h12"
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
