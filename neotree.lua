@@ -58,7 +58,7 @@ vim.keymap.set(
         require("neo-tree.command").execute({
             toggle = true,
             source = "filesystem",
-            position = "left",
+            position = "float",
         })
     end,
     { desc = 'Toggle [N]eotree with [f]ilesystem view' }
@@ -71,7 +71,7 @@ vim.keymap.set(
         require("neo-tree.command").execute({
             toggle = true,
             source = "buffers",
-            position = "left",
+            position = "float",
         })
     end,
     { desc = 'Toggle [N]eotree with [b]uffers view' }
@@ -84,7 +84,7 @@ vim.keymap.set(
         require("neo-tree.command").execute({
             toggle = true,
             source = "git_status",
-            position = "left",
+            position = "float",
         })
     end,
     { desc = 'Toggle [N]eotree with [g]it view' }
