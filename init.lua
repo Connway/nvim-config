@@ -1,4 +1,4 @@
-		--[[
+--[[
 
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
@@ -45,7 +45,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.opt.guifont="FiraMono Nerd Font:h12"
-vim.opt.listchars="eol:↴,space:·,tab:┃┈┈,trail:·,nbsp:·,"
+vim.opt.listchars="eol:↴,space:·,tab:┃┈┈,trail:·,nbsp:·"
 vim.opt.list = true
 
 -- [[ Install `lazy.nvim` plugin manager ]]
