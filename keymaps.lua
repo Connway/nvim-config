@@ -52,8 +52,8 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open float
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- Next and prev buffers
-vim.keymap.set("n", "<C-,>", vim.cmd.bprevious, { silent = true })
-vim.keymap.set("n", "<C-.>", vim.cmd.bnext, { silent = true })
+vim.keymap.set("n", "<C-,>", "<Cmd>BufferPrevious<CR>", { silent = true })
+vim.keymap.set("n", "<C-.>", "<Cmd>BufferNext<CR>", { silent = true })
 vim.keymap.set("n", "<C-<>", "<Cmd>BufferMovePrevious<CR>", { silent = true })
 vim.keymap.set("n", "<C->>", "<Cmd>BufferMoveNext<CR>", { silent = true })
 vim.keymap.set("n", "<C-c>", "<Cmd>BufferClose<CR>", { silent = true })
@@ -63,3 +63,6 @@ vim.keymap.set('n', '<Space>bn', '<Cmd>BufferOrderByBufferNumber<CR>', { desc = 
 vim.keymap.set('n', '<Space>bd', '<Cmd>BufferOrderByDirectory<CR>', { desc = "Order [b]uffers by [d]irectory.", silent = true })
 vim.keymap.set('n', '<Space>bl', '<Cmd>BufferOrderByLanguage<CR>', { desc = "Order [b]uffers by [l]anguage.", silent = true })
 vim.keymap.set('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', { desc = "Order [b]uffers by [w]indow id.", silent = true })
+
+-- Trim whitespace
+vim.keymap.set('n', '<Leader>t', require('whitespace-nvim').trim)
