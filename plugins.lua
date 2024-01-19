@@ -246,6 +246,22 @@ require('lazy').setup({
     end
   },
 
+  {
+    "winston0410/range-highlight.nvim",
+    dependencies = { "winston0410/cmd-parser.nvim" },
+    config = function()
+      require("range-highlight").setup()
+    end
+  },
+
+ --[[ {
+	{
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" }
+	}
+  },--]]
+
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
