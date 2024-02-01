@@ -97,7 +97,7 @@ dofile(config_path .. "neotree.lua")
 dofile(config_path .. "ibl.lua")
 
 require("virt-column").setup({ virtcolumn = "120" })
-require('Comment').setup()
+require("Comment").setup()
 
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.

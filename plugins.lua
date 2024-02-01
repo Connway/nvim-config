@@ -254,6 +254,22 @@ require('lazy').setup({
     end
   },
 
+  {
+    "folke/trouble.nvim",
+     dependencies = { "nvim-tree/nvim-web-devicons" },
+     opts = {
+    }
+  },
+
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+  },
+
+  {
+    "RRethy/vim-illuminate",
+  },
  --[[ {
 	{
 		"ThePrimeagen/harpoon",
