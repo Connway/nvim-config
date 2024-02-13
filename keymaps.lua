@@ -75,3 +75,5 @@ vim.keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix
 vim.keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
 vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
 
+vim.keymap.set("n", "<leader>rr", function() vim.wo.relativenumber = not vim.wo.relativenumber end, { desc = "Toggle [r]elative numbers.", silent = true })
+
