@@ -282,9 +282,11 @@ require('lazy').setup({
       "kylechui/nvim-surround",
       event = "VeryLazy",
       config = function()
-          require("nvim-surround").setup({
-          })
+          require("nvim-surround").setup({})
       end
+  },
+  {
+    "sindrets/diffview.nvim"
   }
 --[[ {
 	{
