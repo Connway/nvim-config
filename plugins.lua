@@ -287,7 +287,15 @@ require('lazy').setup({
   },
   {
     "sindrets/diffview.nvim"
-  }
+  },
+  {
+    "rmagatti/auto-session",
+    config = function()
+      require("auto-session").setup {
+        log_level = "error"
+      }
+  end
+}
 --[[ {
 	{
 		"ThePrimeagen/harpoon",
