@@ -59,6 +59,8 @@ vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
 
+vim.opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+--
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
