@@ -44,7 +44,12 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.opt.guifont="MesloLGL Nerd Font Mono:h8"
+if vim.loop.os_uname().sysname == "Darwin" then
+	vim.opt.guifont="MesloLGL Nerd Font Mono:h12"
+else
+	vim.opt.guifont="MesloLGL Nerd Font Mono:h8"
+end
+
 vim.opt.listchars="eol:↴,space:·,tab:┃┈┈,trail:·,nbsp:·"
 vim.opt.list = true
 
