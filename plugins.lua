@@ -294,8 +294,13 @@ require('lazy').setup({
       require("auto-session").setup {
         log_level = "error"
       }
-  end
-}
+    end
+  },
+  -- {
+  --   "rcarriga/nvim-dap-ui",
+  --   dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" }
+  -- },
+  { "echasnovski/mini.nvim", version = "*" },
 --[[ {
 	{
 		"ThePrimeagen/harpoon",
