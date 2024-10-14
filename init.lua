@@ -107,7 +107,7 @@ dofile(config_path .. "telescope.lua")
 dofile(config_path .. "treesitter.lua")
 dofile(config_path .. "neotree.lua")
 dofile(config_path .. "ibl.lua")
-dofile(config_path .. "dapui.lua")
+-- dofile(config_path .. "dapui.lua")
 
 require("virt-column").setup({ virtcolumn = "120" })
 require("Comment").setup()
