@@ -157,17 +157,6 @@ local on_attach = function(_, bufnr)
   end, { desc = 'Format current buffer with LSP' })
 end
 
--- document existing key chains
-require('which-key').register {
-	{ '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
-	{ '<leader>d', group = '[D]ocument' },
-	{ '<leader>r', group = '[R]ename' },
-	{ '<leader>s', group = '[S]earch' },
-	{ '<leader>w', group = '[W]orkspace' },
-	{ '<leader>t', group = '[T]oggle' },
-	{ '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
-}
-
 -- mason-lspconfig requires that these setup functions are called in this order
 -- before setting up the servers.
 require('mason').setup()
