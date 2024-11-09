@@ -112,6 +112,16 @@ dofile(config_path .. "ibl.lua")
 require("virt-column").setup({ virtcolumn = "120" })
 require("Comment").setup()
 
+require("ouroboros").setup({
+	extension_preferences_table = {
+		  c = {h = 2, hpp = 1},
+		  h = {c = 2, cpp = 1},
+		  cpp = {hpp = 2, h = 1},
+		  hpp = {cpp = 1, c = 2},
+	},
+	switch_to_open_pane_if_possible = true,
+})
+
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)

@@ -352,6 +352,7 @@ require('lazy').setup({
   --   dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" }
   -- },
   { "echasnovski/mini.nvim", version = "*" },
+  { "jakemason/ouroboros", dependencies = { "nvim-lua/plenary.nvim" } },
 --[[ {
 	{
 		"ThePrimeagen/harpoon",

@@ -77,3 +77,4 @@ vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references")
 
 vim.keymap.set("n", "<leader>rr", function() vim.wo.relativenumber = not vim.wo.relativenumber end, { desc = "Toggle [r]elative numbers.", silent = true })
 
+vim.keymap.set("n", "<C-e>", "<Cmd>Ouroboros<CR>")
