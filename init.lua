@@ -169,6 +169,8 @@ else
   vim.opt.guifont = 'MesloLGL Nerd Font Mono:h8'
 end
 
+vim.o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -979,8 +981,6 @@ require('lazy').setup({
     },
   },
 })
-
-require('virt-column').setup { virtcolumn = '120' }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=4 sw=4 noet
