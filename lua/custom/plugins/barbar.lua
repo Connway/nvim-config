@@ -13,6 +13,7 @@ return {
     vim.keymap.set('n', '<C->>', '<Cmd>BufferMoveNext<CR>', { silent = true })
     vim.keymap.set('n', '<C-c>', '<Cmd>BufferClose<CR>', { silent = true })
     vim.keymap.set('n', '<C-p>', '<Cmd>BufferPick<CR>', { silent = true })
+    vim.keymap.set('n', '<C-s-p>', '<Cmd>BufferPickDelete<CR>', { silent = true })
     vim.keymap.set('n', '<A-,>', '<Cmd>BufferMovePrevious<CR>', { silent = true })
     vim.keymap.set('n', '<A-.>', '<Cmd>BufferMoveNext<CR>', { silent = true })
 
